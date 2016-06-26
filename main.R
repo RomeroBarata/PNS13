@@ -1,6 +1,6 @@
 # Load packages
 library(needs)
-needs(readr, tidyr, dplyr, ggplot2)
+needs(readr, dplyr, ggplot2)
 
 # Constants
 DATA_PATH <- "data"
