@@ -1,5 +1,5 @@
 preProcessPNS13 <- function(pns13){
-  # 
+  # Filter by arterial hypertension
   pns13 <- pns13 %>% filter(Q002 == 1)
   
   # Age >= 18

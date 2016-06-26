@@ -15,3 +15,12 @@ educationLevelBoxplot <- function(pns13){
     ylab("Idade") + 
     theme_light()
 }
+
+educationLevelQQplot <- function(pns13){
+  ggplot(pns13, aes(sample = Q003)) + 
+    geom_point(stat = "qq") + 
+    facet_wrap(~ Instrucao) + 
+    xlab("Teórico") + 
+    ylab("Amostra") + 
+    theme_light()
+}
