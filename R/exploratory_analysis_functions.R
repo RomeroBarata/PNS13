@@ -9,7 +9,7 @@ educationLevelHistogram <- function(pns13){
 
 educationLevelBoxplot <- function(pns13){
   ggplot(pns13, aes(x = Instrucao, y = Q003)) + 
-    geom_boxplot(outlier.size = 1.5, outlier.shape = 21) + 
+    geom_boxplot(outlier.size = 1.5, outlier.shape = 21, outlier.colour = "red") + 
     stat_summary(fun.y = "mean", geom = "point", shape = 23, size = 3, fill = "white") + 
     xlab("Instrução") + 
     ylab("Idade") + 
