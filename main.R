@@ -52,7 +52,7 @@ dt_results$comparisons[dt_results$P.adjusted < 0.05]  # 95% confidence level
 # The final results are:
 # Under a 99% confidence level, there are statistically significant differences 
 # between "Sem Instrucao - Fundamental", "Sem Instrucao - Medio", 
-# "Sem Instrucao - Superior", and "Medio - Superior" (~p-values: 0.01159, 0.34803).
+# "Sem Instrucao - Superior", and "Medio - Superior".
 # Under a 95% confidence level, there are statistically significant 
 # differences between "Sem Instrucao - Fundamental", "Sem Instrucao - Medio", 
 # "Fundamental - Medio", "Sem Instrucao - Superior", and "Medio - Superior".
