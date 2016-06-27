@@ -17,8 +17,15 @@ educationLevelBoxplot <- function(pns13){
 }
 
 educationLevelQQplot <- function(pns13){
-  ggplot(pns13, aes(sample = Q003)) + 
-    geom_point(stat = "qq") + 
+  df <- ddply(.data = pns13, .variables = .(Instrucao), function(data){
+    q <- qqnorm(data$Q003, plot = FALSE)
+    data$xq <- q$x
+    data
+  })
+  
+  ggplot(df, aes(x = xq, y = Q003)) + 
+    geom_point() + 
+    geom_smooth(method = "lm", se = FALSE, size = 0.7, colour = "red") + 
     facet_wrap(~ Instrucao) + 
     xlab("Teórico") + 
     ylab("Amostra") + 

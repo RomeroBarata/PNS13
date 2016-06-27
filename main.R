@@ -1,7 +1,7 @@
 # R >= 3.3.0
 # Load packages
 if (!require(needs)) install.packages("needs")
-needs(readr, dplyr, ggplot2, nortest, dunn.test)
+needs(readr, plyr, dplyr, ggplot2, nortest, dunn.test)
 
 # Constants
 DATA_PATH <- "data"
